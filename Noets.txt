@@ -1,0 +1,21 @@
+OOP (Object-Oriented Programming) is a programming paradigm where we structure programs around objects, which combine data (attributes or fields) and behavior (methods or functions) into a single unit.
+
+Instead of only thinking in terms of variables and functions separately, in OOP we treat things as objects that represent real-world or conceptual entities — each with:
+
+State → stored in attributes (variables inside the object)
+
+Behavior → implemented through methods (functions bound to the object)
+
+Core principles of OOP:
+
+Encapsulation → bundling data and methods together, controlling access.
+
+Abstraction → hiding unnecessary implementation details, exposing only what’s needed.
+
+Inheritance → allowing new classes to be based on existing ones, reusing and extending code.
+
+Polymorphism → the ability for different objects to be used interchangeably if they share a common interface.
+
+A cleaner definition could be:
+
+OOP is a programming paradigm where programs are built using objects — self-contained units of state and behavior — to model and solve problems in a way that mirrors real-world concepts.
