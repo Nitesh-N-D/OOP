@@ -1,3 +1,4 @@
+package TUF;
 //Your code goes here
 
 class Student {

@@ -1,0 +1,40 @@
+# =========================
+# Java compiled files
+# =========================
+*.class
+*.jar
+*.war
+*.ear
+
+# =========================
+# VS Code
+# =========================
+.vscode/*
+!.vscode/tasks.json
+!.vscode/settings.json
+!.vscode/launch.json
+
+# =========================
+# Input / Output files (DSA / CP)
+# =========================
+input.txt
+output.txt
+
+# =========================
+# OS / Editor junk
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# Logs / temp files
+# =========================
+*.log
+*.tmp
+
+# =========================
+# Build folders (if you add later)
+# =========================
+bin/
+out/
+build/
