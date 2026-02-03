@@ -1,0 +1,63 @@
+/* 
+ * KEY CONCEPTS - One-to-Many Association:
+ * 
+ * 1. ONE-TO-MANY RELATIONSHIP:
+ *    - ONE Teacher is associated with MANY Students
+ *    - ONE Classroom has ONE Teacher but MANY Students
+ *    - Cardinality: Teacher [1] ←→ [*] Student (1 to many)
+ * 
+ * 2. MULTIPLICITY:
+ *    - "One" side: Single object reference (Teacher teacher)
+ *    - "Many" side: Collection/Array (Student[] students)
+ * 
+ * 3. REAL-WORLD ANALOGY:
+ *    - One teacher teaches many students in a classroom
+ *    - One teacher can have 20, 30, or more students
+ *    - But all those students have the same one teacher (in this class)
+ * 
+ * 4. COLLECTION USAGE:
+ *    - Array is used to store multiple Student objects
+ *    - Could also use ArrayList, List, etc. for dynamic sizing
+ * 
+ * 5. VISUAL REPRESENTATION:
+ * 
+ *         ┌──────────────┐
+ *         │   Teacher    │
+ *         │ "Dr. Smith"  │
+ *         └──────┬───────┘
+ *                │
+ *                │ teaches (1:*)
+ *                │
+ *        ┌───────┴───────┬───────┬───────┐
+ *        │               │       │       │
+ *        ▼               ▼       ▼       ▼
+ *   ┌─────────┐    ┌─────────┐ ┌─────────┐ ┌─────────┐
+ *   │Student  │    │Student  │ │Student  │ │Student  │
+ *   │ Alice   │    │  Bob    │ │ Charlie │ │ Diana   │
+ *   │ Roll:101│    │ Roll:102│ │ Roll:103│ │ Roll:104│
+ *   └─────────┘    └─────────┘ └─────────┘ └─────────┘
+ * 
+ * COMPARISON with One-to-One (Passport example):
+ * - One-to-One:  One Student ←→ One Passport
+ * - One-to-Many: One Teacher ←→ Many Students
+ */
+```
+
+**Output:**
+```
+Student added successfully!
+Student added successfully!
+Student added successfully!
+Student added successfully!
+
+========== CLASSROOM DETAILS ==========
+Teacher: Dr. Smith
+Number of Students: 4
+
+Student List:
+-------------
+Roll No: 101, Name: Alice
+Roll No: 102, Name: Bob
+Roll No: 103, Name: Charlie
+Roll No: 104, Name: Diana
+=======================================
