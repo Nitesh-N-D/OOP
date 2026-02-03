@@ -2,12 +2,12 @@
   "version": "2.0.0",
   "tasks": [
     {
-      "label": "Java: Run active file (input.txt -> output.txt in same folder)",
+      "label": "Java: Run active file (auto input/output)",
       "type": "shell",
       "command": "bash",
       "args": [
-        "-lc",
-        "FILE='${file}'; DIR=$(dirname \"$FILE\"); CLS=$(basename \"$FILE\" .java); cd \"$DIR\" && javac \"$CLS.java\" && java \"$CLS\" < input.txt > output.txt"
+        "-c",
+        "cd \"${fileDirname}\" && javac \"${fileBasenameNoExtension}.java\" && if [ -f input.txt ]; then java \"${fileBasenameNoExtension}\" < input.txt > output.txt 2>&1; else java \"${fileBasenameNoExtension}\" > output.txt 2>&1; fi"
       ],
       "group": {
         "kind": "build",

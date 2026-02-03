@@ -1,3 +1,6 @@
+
+
+
 class Outerclass{
     static int number = 10;
     String name = "Outerclass";

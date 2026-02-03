@@ -1,0 +1,41 @@
+/* 
+ * KEY CONCEPTS - One-to-One Association:
+ * 
+ * 1. ASSOCIATION: Students class "HAS-A" Passport (composition/aggregation)
+ *    - Students class contains a reference to a Passport object
+ * 
+ * 2. ONE-TO-ONE RELATIONSHIP:
+ *    - One Student object is associated with exactly ONE Passport object
+ *    - One Passport object is associated with exactly ONE Student object
+ *    - This models real-world relationship: each student has one passport
+ * 
+ * 3. CARDINALITY: 1:1 (one-to-one)
+ *    Student [1] ←→ [1] Passport
+ * 
+ * 4. DEPENDENCY: Student depends on Passport to get passport information
+ *    - Student uses Passport's getPassportNumber() method
+ * 
+ * 5. OBJECT COLLABORATION: Two objects working together
+ *    - Students object collaborates with Passport object
+ *    - They maintain their own data but are connected through association
+ * 
+ * Real-world analogy:
+ * - Just like in real life, one person has one passport
+ * - The passport belongs to that specific person
+ * - You can't have multiple passports (in this simple model)
+ * - The passport can't belong to multiple people
+ */
+```
+
+**Visual Representation of the One-to-One Association:**
+```
+┌─────────────────┐              ┌──────────────────┐
+│   Students      │              │    Passport      │
+├─────────────────┤              ├──────────────────┤
+│ - name          │              │ - passportNumber │
+│ - passport   ●──┼─────1:1─────→│                  │
+├─────────────────┤              ├──────────────────┤
+│ + displayDetails│              │ + getPassportNumber│
+└─────────────────┘              └──────────────────┘
+     (1)                              (1)
+   "Harish"                      "ED6582983F"
